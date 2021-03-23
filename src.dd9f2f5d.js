@@ -19,4 +19,4 @@ var e=document.querySelectorAll('img[loading="lazy"]');if("loading"in HTMLImageE
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=m(require("./templates/menu-item.hbs")),r=m(require("./menu.json")),s=m(require("./js/refs.js")),u=m(require("./js/theme.js")),i=m(require("./js/menu-items-markup.js")),t=m(require("./js/tag-list.js")),j=m(require("./js/lazy-loading.js"));function m(e){return e&&e.__esModule?e:{default:e}}
 },{"./templates/menu-item.hbs":"eREJ","./menu.json":"mA8c","./js/refs.js":"VyiV","./js/theme.js":"qwQt","./js/menu-items-markup.js":"AAlK","./js/tag-list.js":"rAzs","./js/lazy-loading.js":"zAjg"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.43f9e764.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.dd9f2f5d.js.map
