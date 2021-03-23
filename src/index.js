@@ -4,4 +4,5 @@ import refs from './js/refs.js';
 import theme from './js/theme.js';
 import menuItemsMarkup from './js/menu-items-markup.js';
 import tagList from './js/tag-list.js';
+import lazyLoading from './js/lazy-loading.js';
 
