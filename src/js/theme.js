@@ -19,16 +19,22 @@ function onCheckboxClick(evt) {
     refs.body.classList.contains('dark-theme') ? lightTheme(value) : darkTheme(value);
 }
 
+function toggleClass(classToAdd, classToRemove) {
+    refs.body.classList.add(classToAdd);
+    refs.body.classList.remove(classToRemove);
+}
+
+function saveThemeToLocalStorage(saveTheme, removeTheme, value) {
+    localStorage.setItem(saveTheme, value);
+    localStorage.removeItem(removeTheme);
+}
+
 function darkTheme(value) {
-    refs.body.classList.add('dark-theme');
-    refs.body.classList.remove('light-theme');
-    localStorage.setItem(Theme.DARK, value);
-    localStorage.removeItem(Theme.LIGHT);
+    toggleClass('dark-theme', 'light-theme');
+    saveThemeToLocalStorage(Theme.DARK, Theme.LIGHT, value);
 }
 
 function lightTheme(value) {
-    refs.body.classList.add('light-theme');
-    refs.body.classList.remove('dark-theme');
-    localStorage.setItem(Theme.LIGHT, value);
-    localStorage.removeItem(Theme.DARK);
+    toggleClass('light-theme', 'dark-theme');
+    saveThemeToLocalStorage(Theme.LIGHT, Theme.DARK, value);
 }
